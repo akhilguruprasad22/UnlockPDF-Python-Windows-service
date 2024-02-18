@@ -1,6 +1,11 @@
 # UnlockPDF Python Windows service
 A windows service which monitors a given directory and it's subdirectories for file changes and subsequently unlocks (removes set access restrictions) newly added PDFs.
 
+> [!NOTE]
+> The service creates and monitors, by default, the **C:/Documents/Unlock PDF** directory
+> 
+> The directory to be monitored can also be set as a system environment variable under the name: **UPDF_MONITOR_PATH**
+
 ## Requirements
 - Python 3.*
 - Visual C++ Build Tools 2015
